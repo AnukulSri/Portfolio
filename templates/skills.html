@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio Site</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/flexslider.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/classie.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/easing.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery.flexslider.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery-2.1.4.min.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/move-top.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/nivo-lightbox.min.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/responsiveslides.min.js') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='js/uisearch.js') }}">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+<meta name="keywords" content="Auction Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!--Google Fonts-->
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!-- //end-smoth-scrolling -->
+<!--header start here-->
+<div class="header">
+	<div class="container">
+		<div class="header-main">
+			<div class="logo img-Responsive img-fluid">
+				<a href="{{url_for('Welcome')}}"> <img src="static/images/final_logo.png" alt="" title=""> </a>
+
+			</div>
+			<div class="head-right">
+			  <div class="top-nav">
+					<span class="menu"> <img src="static/images/icon.png" alt=""/></span>
+				<ul class="res">
+					<li><a href="{{url_for('Welcome')}}">Home</a></li> <!-- to pass href in html we have to give function name whichg we have created in main.py file --> 
+					<li><a href="{{url_for('about')}}">About Me</a></li>
+					<li><a class="active" href="{{url_for('skills')}}">Skills</a></li>
+					<li><a href="{{url_for('Projects')}}">Projects</a></li>
+					<li><a href="{{url_for('contact')}}">Contact</a></li>
+				<div class="clearfix"> </div>
+				</ul>
+				<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.res" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+			<!-- /script-for-menu -->
+			 </div>
+		    
+			
+				
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+			   </div>
+			</div>
+			<div class="clearfix"> </div>
+			   <!-- search-scripts -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+			  <!-- //search-scripts -->
+		</div>
+		
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="banner">
+
+<div class="services">
+	<div class="container">
+		<div class="services-main">
+			<div class="services-top">
+				<h3 style='font-size:50px'>SKILLS</h3>
+				<p>Every skill you acquire doubles your odds of success.</p>
+			</div>
+			<div class="services-bottom">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					  <img src="static/images/datas.png" style="width: 34rem; height: 26rem;" alt="" class="rounded img-fluid img-thumbnail img-Responsive">
+					  <div class="caption">
+					    <h4><b>Data Science</b></h4>
+					    <p>Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms </p>
+					  </div>
+					</div>
+					  </div>
+					   <div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					  <img src="static/images/data analysis.jpg" style="width: 34rem; height: 26rem;" alt="">
+					  <div class="caption">
+					    <h4><b>Data Analysis</b></h4>
+					    <p>Data analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information.</p>
+					  </div>
+					</div>
+					  </div>
+					   <div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					  <img src="static/images/machine-learning.png" style="width: 34rem; height: 26rem;" alt="">
+					  <div class="caption">
+					    <h4><b>Machine Learning</b></h4>
+					    <p>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms</p>
+					  </div>
+					</div>
+					  </div>
+				   <div class="clearfix"> </div>
+				</div>
+				<div class="row">
+					  <div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					  <img src="static/images/Python-01 (2).png" style="width: 34rem; height: 26rem;" alt="">
+					  <div class="caption">
+					    <h4><b>Python</b></h4>
+					    <p>Python is a high-level, general-purpose programming language.Python is dynamically typed and garbage-collected.</p>
+					  </div>
+					</div>
+					  </div>
+					   <div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					 <img src="static/images/PowerBIImg.jpg" style="width: 34rem; height: 26rem;" alt="">
+					  <div class="caption">
+					   <h4><b>Power BI</b></h4>
+					    <p>Power BI is an interactive data visualization software product developed by Microsoft with a primary focus on business intelligence. </p>
+					  </div>
+					</div>
+					  </div>
+					   <div class="col-sm-6 col-md-4 ser">
+					<div class="thumbnail">
+					  <img src="static/images/ms sql server.png" style="width: 34rem; height: 26rem;" alt="">
+					  <div class="caption">
+					    <h4><b>Microsoft SQL Server</b></h4>
+					    <p>Microsoft SQL Server is a relational database management system developed by Microsoft.Initial Release April 24, 1989
+						</p>
+					  </div>
+					</div>
+				 </div>
+				   <div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
