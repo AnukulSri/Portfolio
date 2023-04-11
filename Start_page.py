@@ -31,6 +31,8 @@ def submit():
         message = request.form['Textarea1']
         phone_no = request.form['phone']
     return redirect(url_for('db',nm=name,em=email,msg=message,ph=phone_no))
+
+
 @app.route('/db/<string:nm>/<string:em>/<string:msg>/<string:ph>')
 def db(nm,em,msg,ph):
     
